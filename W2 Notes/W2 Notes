@@ -30,7 +30,7 @@ INTERNAL CSS
          refer inline by class="shadow-text"
       }
       #large-paragraph{
-         id selector
+         id selector{
       }
    </style>
 
@@ -102,3 +102,19 @@ GRADIENT IN WORDS
          background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+LEARNED DURING ASSIGNMENT
+   background gradient color
+      element/class/id {
+         background-image: linear-gradient (color, color);
+      }
+   link
+      element/class/id: link {
+         color, etc
+      }
+      element/class/id: visited {
+         color, etc
+      }
+      element/class/id: hover {
+         color, etc
+      }
