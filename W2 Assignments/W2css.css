@@ -1,0 +1,238 @@
+/* requirements: 
+   1. use only external CSS file
+   2. every element must be styled
+   3. create style rules using class, id, and element sectors */
+
+
+/* SAME ON EVERY PAGE */
+   /* BACKGROUND */
+   html {
+      background-image: linear-gradient( 
+      #09081F,
+      #382124,
+      #673929,
+      #95522E,
+      #C46A33,
+      #F28228);
+      scroll-behavior: smooth;
+   }
+   /* LINKS */
+      a:link {
+         color: #F28228;
+         font-size: 30px;
+         padding: 30px;
+      }
+      a:visited {
+         color:#F28228;
+      }
+      a:hover{
+         color:#ffffff;
+      }
+   /* TITLE */
+      .page-title {
+         color: #ffffff;
+         filter: drop-shadow(4px 2px 3px #F28228);
+         font-size: 70px;
+         margin: 1rem;
+      }
+   /* SUBTITLE */
+      .page-subtitle {
+         color: #ffffff;
+         filter: drop-shadow(4px 2px 3px #F28228);
+         font-size: 40px;
+         margin-left: 5rem;
+         font-style: italic;
+      }
+   /* OTHER */
+      li {
+         margin: 10px;
+         font-size: 20px;
+      }
+      .back-to-top{
+         position: fixed;
+         bottom: 2rem;
+         right: 2rem;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         background-color:#09081F;
+         border-radius: 10px;
+         padding: 3px;
+         text-decoration: none;
+         transition: .2s ease-out;
+      }
+      .back-to-top span {
+         transition: .2s ease-out;
+      }
+      .back-to-top:hover {
+         transform: translateY(-4px);
+      }
+
+/* HOME PAGE */
+   /* INTRO */
+      #intro-words {
+         color: #ffffff;
+         font-size: 30px;
+         margin: 10px 2rem;
+         font-style: italic;
+
+      }
+      .white-orange {
+         color: #ffffff;
+         font-size: 40px;
+         filter: drop-shadow(4px 2px 3px #F28228);
+         margin-left: 7rem;
+         padding-top: 1rem;
+      }   
+      #to {
+         color: #ffffff;
+         font-size: 30px;
+         filter: drop-shadow(2px 2px 3px #F28228);
+         margin-left: 6rem;
+      }
+      #exit-words {
+         color: #ffffff;
+         font-size: 30px;
+         margin-left: 31rem;
+         margin-top: 1px;
+         margin-bottom: -10px;
+         font-style: italic;
+      }
+
+   /* MAIN */
+      #home-pumpkins {
+         height: 295px;
+         border: 3px solid;
+         float: right;
+         justify-content: space-around;
+         display: flex;
+         margin-bottom: 20px;
+      }
+      #home-page {
+         margin-left: 2rem;
+         font-size: 20px;
+         margin-top: -2rem;
+      }
+      h4 {
+         font-size: 27px;
+         filter: drop-shadow(2px 2px 3px #ffffff);
+      }
+      form{
+         width: 310px;
+         padding: 10px;
+         border: 5px solid black;
+         margin-left:4rem;
+         font-size: 20px;
+      }
+
+/* TRICKS PAGE */
+   /* MAIN */
+      /* TABLE */
+         table{
+            border: 4px solid #F28228;
+            box-shadow: 6px 6px 20px #ffffff, 
+               -6px -6px 20px #ffffff,
+               -6px 6px 20px #ffffff, 
+               6px -6px 20px #ffffff;
+            color: #ffffff; 
+            /* margin: 2rem; */
+            font-size: 20px;
+            border-radius: 20px;
+            /* padding: 10px; */
+            background-color: rgba(0,0,0,.5);
+            display: grid;
+            justify-content: center;
+         }
+      /* IMAGES */
+         #trick-pics {
+            margin: 4px;
+            height: 300px;
+            border-radius: 8px;
+            border: solid #ffffff;
+         }
+
+/* TREATS PAGE */
+ul, ol {
+      font-size: 18px;
+   }    
+   #recipe-pics {
+      height: 200px;
+   }
+   #recipe-pics:hover {
+      box-shadow: 2px 2px 10px #ffffff, 
+               -2px -2px 10px #ffffff,
+               -2px 2px 10px #ffffff, 
+               2px -2px 10px #ffffff;
+   }
+   #recipe-pics2 {
+      height: 400px;
+   }
+   div {
+      width: 95%;
+      text-align: center;
+      color: #ffffff;
+      font-size: 25px;
+   }
+   .drop-shadow {
+      filter: drop-shadow(4px 2px 3px #F28228);
+   }
+   aside {
+      width: 95%;
+      background-color:#673929;
+      border: solid #ffffff;
+      text-align: center;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 10px 15px 10px;
+      margin: 7px 5px 5px 5px;
+      
+   }
+   /* PUMPKIN RECIPE */
+   #pumpkinrecipe {
+      color: #ffffff;
+      font-size: 18px;
+      margin-left: 2rem;
+   }
+   #h3-pumpkin {
+      color: #F28228;
+      filter: drop-shadow(4px 4px 2px #09081F);
+      font-size: 23px;
+      margin-left: 2rem;
+   }
+
+   /* APPLE RECIPE */
+   #applerecipe {
+      color: #ffffff;
+      font-size: 20px;
+      margin-left: 2rem;
+   }
+   #h3-apple {
+      color: #F28228;
+      filter: drop-shadow(4px 4px 2px #09081F);
+      font-size: 23px;
+      margin-left: 2rem;
+   }
+
+   /* STRAWBERRY RECIPE */
+   #strawberryrecipe {
+      color:#09081F;
+      font-size: 18px;
+      margin-left: 2rem;
+   }
+   #h3-straw {
+      color: #09081F;
+      filter: drop-shadow(4px 4px 2px #ffffff);
+      font-size: 23px;
+      margin-left: 2rem;
+   }
+
+
+   /* media
+   @media (widht >980px) {
+      .logo {
+         position: sticky;
+         top: .5rem;
+         mix-blend-mode: difference;
+      }
+   }
+          */

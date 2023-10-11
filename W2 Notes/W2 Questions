@@ -1,0 +1,35 @@
+What is the difference between class (.) and ID selectors (#)?
+   ID used to id a specific element. 
+      e.g. specific large paragraph needs to be blue
+   class used to id a group of elements with similarities.
+      e.g. anyone that uses this class will gain the attribute shadow-box
+   pseudo-class is attached to classes that are used for a specific purpose. 
+      e.g. tr:hover {color: gray; } every time a cursor hovers over the table row, the row will change color, no matter what is in it.
+
+Is it important what letters are capitalized?
+   when creating variables or objects that will be referred to.
+
+How do I navigate terminal? Won't let me go into folders...
+Do you know how to change my name on my mac?
+
+lab01
+   what is rem? -> 16 pixels
+   explain the logic of @media, displaying one picture at a time 
+      depending on device
+   what does flex-wrap do? 
+
+
+ACTUAL QUESTIONS
+- go over @media and the logic
+- add the logic to my website, change photos depending on screen
+- further explanation of displays???
+   - grid vs flex
+- how do I navigate the terminal?
+- when should I use margin, padding, border, etc
+- is there a way to see every element a class/id/pseudo-class is attached to?
+- can I say section1, section2, div1, etc when breaking up info?
+- is there a way to add a gradient ON the text? Black to white, or vice versa? difference works, but I can't make it different.
+
+- how do I make navigation bar follow scroll?
+- how to I make sections move to fit a space?
+   just make it move

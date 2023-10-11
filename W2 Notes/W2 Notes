@@ -1,0 +1,104 @@
+INLINE CSS - styles 
+   DO NOT do inline CSS if youre doing the whole page.
+   list of styles
+      - background-color = explains itself
+      - border-style = border around tag
+      - border-color = color of border
+      - border-radius = gives border curve; must say px
+      - text-shadow = gives text shadow 
+      - font-size = changes font size
+
+   <body style="background-color: blue">
+         </body>
+   OR
+   <body style="background-color: #256AD0">
+         </body>
+   OR
+   <body style="background-color: rgb(38,113,235)">
+         </body>
+   - put the style= WITHIN the first tag 
+
+INTERNAL CSS
+   gives place to put all CSS style changes in the head so its not tedius
+   <style>
+      body{
+         whatever green part is; the style
+      }
+      .shadow-text {
+         this creates a CLASS so you can add it to the lines,
+         like if there are multiple paragraphs. 
+         refer inline by class="shadow-text"
+      }
+      #large-paragraph{
+         id selector
+      }
+   </style>
+
+EXTERNAL CSS
+   best way to do it. have its own file
+   then it can update teh styles on each page and reduce manually
+   redoing anything and reduce time/tedious effort
+   - add into heading:
+         <link rel="stylesheet" href="Styles.css">
+
+BASIC PROPERTIES
+   color: gray;
+   background-color: blue;
+   border-style: dashed; (dotted, etc)
+   border-width: 3px;
+   border-color: red;
+   border-radius: 4px;
+   height: 200px;
+   text-align: center; (justify, etc)
+
+CSS FLOAT
+   can float info left or right of content
+   img{ (or whatever tag you choose)
+      float: right;
+   }
+
+CSS PSUEDO CLASSES
+   styled based on current state, like hovering mouse, or every third list item
+      [CLASS]:hover{
+         background-color: red; = when your mouse hovers over the class in website,
+         it turns red 
+      } 
+   [CLASS]:nth-child(DISTINCTION) { like tr every even}
+
+
+STYLING A TABLE 
+      rgb(x,x,x) MUST not have any spaces or it wont work
+      rgba(x,x,x,x) - last one is transperany/opacity
+
+
+COMMAND LINE INTERFACE (CLI) 
+      ls = shows current directory
+      cd = change directory  
+         cd .. = goes back one directory
+         cd ../.. = goes back two directories
+         cd /[NAME] = goes into folder in directory
+      mkdir = creates new directory. Do mkdir [NAME] and itll create [NAME]
+      cp = copy of a file or directory
+         e.g. copy file test.txt, do cp test.text testcopy.txt 
+      mv = moves file or directory to another location
+      pwd = displays path of current directory
+      touch = create new file
+
+GITHUB
+      git = versio ncontrol system that tracks changes and help collaborate
+      github = web based platform; collaboration platform
+      repository = repo; command line is stored
+
+   git status = check status
+   git add = add files/folders, use . to add all
+   git commit -m "words" = add a comment 
+   git push = publish it to github
+
+   in computer folder, hit command+shift+. = 
+      shows hidden folder
+
+GRADIENT IN WORDS 
+   background-image: linear-gradient(#ffffff, black);
+         background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
