@@ -6,11 +6,12 @@
 /* INTO TO WEBSITE
       - using the website from Week1 to add a CSS file for styling
       - to generalize the changes to this site, you'll see:
+         - all the text has changed in some way
          - the drop shadow filter being used for titles, some 
          subtitles, and emphasized words so that the user can 
          read the pages better
          - font sizes are bigger for easier reading
-         - padding or margins have been added to certain elements
+         - padding or margins spaces have been added to certain elements
          - some images and sections will move or expand depending 
          on screen size
          - every page has a scroll to the top button that changes 
@@ -120,8 +121,8 @@
          font-style: italic;
 
       }
-      /* class for special effects on home page that can be referred
-      to on other pages for the same effect */
+      /* class selector for special effects on home page that can be 
+      referred to on other pages for the same effect */
       .white-orange {
          color: #ffffff;
          font-size: 40px;
@@ -197,7 +198,7 @@
             justify-content: center;
          }
       /* IMAGES */
-         /* id for pics to be a certain way */
+         /* id selector for pics to be a certain way */
          #trick-pics {
             margin: 4px;
             height: 300px;
