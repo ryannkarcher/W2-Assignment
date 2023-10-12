@@ -3,9 +3,32 @@
    2. every element must be styled
    3. create style rules using class, id, and element sectors */
 
+/* INTO TO WEBSITE
+      - using the webiste from W1 to add a CSS file for styling
+      - to generalize the changes to this site, you'll see:
+         - the drop shadow filter being used for titles, some 
+         subtitles, and emphasized words so that the user can 
+         read the pages better
+         - font sizes are bigger for easier reading
+         - padding or margins have been added to certain elements
+         - some images and sections will move or expand depending 
+         on screen size
+         - every page has a scroll to the top button that changes 
+         color and moves so the user knows it's function 
+      - we'll take a glance at these other pages to see the differences
+         - I've added subtitles
+         - again, images and sections are moving depending on screen
+         size
+         - borders and margins have been added to separate the images
+          - links change color when hovered, and stay the same color
+         of orange whether the user visited the site or not
+         - last difference is that the images that act as links
+         */
 
 /* SAME ON EVERY PAGE */
    /* BACKGROUND */
+      /* every element of html has a gradient background black to orange;
+      scroll behavior added for the back-to-top function */
    html {
       background-image: linear-gradient( 
       #09081F,
@@ -16,7 +39,11 @@
       #F28228);
       scroll-behavior: smooth;
    }
+
    /* LINKS */
+      /* anchor acts as an element; links have pseudo-classes so 
+      they can change color (or stay the same depending on unvisited, 
+      visited, or hover */
       a:link {
          color: #F28228;
          font-size: 30px;
@@ -30,6 +57,7 @@
       }
 
    /* TITLE */
+      /* used a class to add drop-shadow and other changes to titles */
       .page-title {
          color: #ffffff;
          filter: drop-shadow(4px 2px 3px #F28228);
@@ -37,6 +65,7 @@
          margin: 1rem;
       }
    /* SUBTITLE */
+         /* used class to add changes to subtitles */
       .page-subtitle {
          color: #ffffff;
          filter: drop-shadow(4px 2px 3px #F28228);
@@ -45,14 +74,22 @@
          font-style: italic;
       }
    /* OTHER */
+      /* using the element li, anything that is a list item will 
+      be changed per below */
       li {
          margin: 10px;
          font-size: 20px;
       }
+      /* position allows button to stay in corner while user is
+      scrolling, bottom and right say what position it is.
+         - inline flex makes the button able to take up space
+         without taking up space from the left and right side 
+         of the screen
+         - content (arrow symbol) is centered */
       .back-to-top{
          position: fixed;
-         bottom: 2rem;
-         right: 2rem;
+            bottom: 2rem;
+            right: 2rem;
          display: inline-flex;
          align-items: center;
          justify-content: center;
@@ -62,15 +99,19 @@
          text-decoration: none;
          transition: .2s ease-out;
       }
+      /* connects to span and gives it a transition to slowly
+      move */
       .back-to-top span {
          transition: .2s ease-out;
       }
+      /* makes it bounce */
       .back-to-top:hover {
          transform: translateY(-4px);
       }
 
 /* HOME PAGE */
    /* INTRO */
+      /* ID for special effects on home page */
       #intro-words {
          color: #ffffff;
          font-size: 30px;
@@ -78,6 +119,8 @@
          font-style: italic;
 
       }
+      /* class for special effects on home page that can be referred
+      to on other pages for the same effect */
       .white-orange {
          color: #ffffff;
          font-size: 40px;
@@ -85,12 +128,14 @@
          margin-left: 7rem;
          padding-top: 1rem;
       }   
+      /* ID for special effects on home page */
       #to {
          color: #ffffff;
          font-size: 30px;
          filter: drop-shadow(2px 2px 3px #F28228);
          margin-left: 6rem;
       }
+      /* ID for special effects on home page */
       #exit-words {
          color: #ffffff;
          font-size: 30px;
@@ -101,23 +146,28 @@
       }
 
    /* MAIN */
+      /* id for picture to move when screen size is different */
       #home-pumpkins {
          height: 295px;
          border: 3px solid;
+         border-radius: 10px;
          float: right;
          justify-content: space-around;
          display: flex;
          margin-bottom: 20px;
       }
+      /* id for paragraphs to look a certain way */
       #home-page {
          margin-left: 2rem;
          font-size: 20px;
          margin-top: -2rem;
       }
+      /* element for headings to look a certain way */
       h4 {
          font-size: 27px;
          filter: drop-shadow(2px 2px 3px #ffffff);
       }
+      /* element for form to have good format */
       form{
          width: 310px;
          padding: 10px;
@@ -129,6 +179,9 @@
 /* TRICKS PAGE */
    /* MAIN */
       /* TABLE */
+         /* element for all tables to look a certain way; content
+         is centered 
+            - display grid kept it in the format... do more research*/
          table{
             border: 4px solid #F28228;
             box-shadow: 6px 6px 20px #ffffff, 
@@ -136,15 +189,14 @@
                -6px 6px 20px #ffffff, 
                6px -6px 20px #ffffff;
             color: #ffffff; 
-            /* margin: 2rem; */
             font-size: 20px;
             border-radius: 20px;
-            /* padding: 10px; */
             background-color: rgba(0,0,0,.5);
             display: grid;
             justify-content: center;
          }
       /* IMAGES */
+         /* id for pics to be a certain way */
          #trick-pics {
             margin: 4px;
             height: 300px;
@@ -153,30 +205,42 @@
          }
 
 /* TREATS PAGE */
+      /* element all ul and ol look this way */
       ul, ol {
             font-size: 18px;
          }    
+         /* id for first recipe pics  */
          #recipe-pics {
             height: 200px;
          }
+         /* pseudo-class for id which makes it dynmaic when cursor
+         hovers over it  */
          #recipe-pics:hover {
             box-shadow: 2px 2px 10px #ffffff, 
                      -2px -2px 10px #ffffff,
                      -2px 2px 10px #ffffff, 
                      2px -2px 10px #ffffff;
          }
+         /* id for all pictures on the page used for recipe headlines, 
+         not a class since I don't want ALL pictures to look like that*/
          #recipe-pics2 {
             height: 400px;
          }
+         /* element div made it so recipe title and picture could
+         move depending on screen size */
          div {
             width: 95%;
             text-align: center;
             color: #ffffff;
             font-size: 25px;
          }
+         /* class filter similar to white-orange but without certain
+         aspects that wouldn't work on the treats page  */
          .drop-shadow {
             filter: drop-shadow(4px 2px 3px #F28228);
          }
+          /* element separated full recipe and intro from everything
+         else, and I made it change size depending on screen size */
          aside {
             width: 95%;
             background-color:#673929;
@@ -188,12 +252,14 @@
             margin: 7px 5px 5px 5px;
             font-size: 25px;
          }
-         /* PUMPKIN RECIPE */
+      /* PUMPKIN RECIPE */
+         /*  gave text color and spacing*/
          #pumpkinrecipe {
             color: #ffffff;
             font-size: 20px;
             margin-left: 2rem;
          }
+         /* gave headings color and spacing */
          #h3-pumpkin {
             color: #F28228;
             filter: drop-shadow(4px 4px 2px #09081F);
@@ -201,12 +267,14 @@
             margin-left: 2rem;
          }
 
-         /* APPLE RECIPE */
+      /* APPLE RECIPE */
+         /*  gave text color and spacing*/
          #applerecipe {
             color: #ffffff;
             font-size: 20px;
             margin-left: 2rem;
          }
+         /* gave headings color and spacing */
          #h3-apple {
             color: #F28228;
             filter: drop-shadow(4px 4px 2px #09081F);
@@ -214,12 +282,16 @@
             margin-left: 2rem;
          }
 
-         /* STRAWBERRY RECIPE */
+      /* STRAWBERRY RECIPE */
+         /*  gave text color and spacing; changed it since
+         gradient in background was changing*/
          #strawberryrecipe {
             color:#09081F;
             font-size: 20px;
             margin-left: 2rem;
          }
+         /* gave headings color and spacing; changed D2 gradient
+         change in the background.*/
          #h3-straw {
             color: #09081F;
             filter: drop-shadow(4px 4px 2px #ffffff);
@@ -229,6 +301,8 @@
 
 
 
+
+         
 /* how to have links fixed and follow once you scroll; position: fixed*/
 
 /* media similar thing
