@@ -4,7 +4,7 @@
    3. create style rules using class, id, and element sectors */
 
 /* INTO TO WEBSITE
-      - using the webiste from W1 to add a CSS file for styling
+      - using the website from Week1 to add a CSS file for styling
       - to generalize the changes to this site, you'll see:
          - the drop shadow filter being used for titles, some 
          subtitles, and emphasized words so that the user can 
@@ -23,6 +23,7 @@
           - links change color when hovered, and stay the same color
          of orange whether the user visited the site or not
          - last difference is that the images that act as links
+         box shadow
          */
 
 /* SAME ON EVERY PAGE */
@@ -209,6 +210,7 @@
       ul, ol {
             font-size: 18px;
          }    
+      /* RECIPE LINKS */
          /* id for first recipe pics  */
          #recipe-pics {
             height: 200px;
@@ -223,6 +225,8 @@
          }
          /* id for all pictures on the page used for recipe headlines, 
          not a class since I don't want ALL pictures to look like that*/
+      
+      /* RECIPE TITLE AND PIC - MOVEMENT*/
          #recipe-pics2 {
             height: 400px;
          }
@@ -241,6 +245,8 @@
          }
           /* element separated full recipe and intro from everything
          else, and I made it change size depending on screen size */
+      
+      /* RECIPE ASIDE - MOVEMENT */
          aside {
             width: 95%;
             background-color:#673929;
@@ -252,6 +258,7 @@
             margin: 7px 5px 5px 5px;
             font-size: 25px;
          }
+      
       /* PUMPKIN RECIPE */
          /*  gave text color and spacing*/
          #pumpkinrecipe {
@@ -302,7 +309,7 @@
 
 
 
-         
+
 /* how to have links fixed and follow once you scroll; position: fixed*/
 
 /* media similar thing
