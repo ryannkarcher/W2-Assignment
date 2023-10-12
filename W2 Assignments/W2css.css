@@ -5,28 +5,29 @@
 
 /* INTO TO WEBSITE
       - using the website from Week1 to add a CSS file for styling
-      - to generalize the changes to this site, you'll see:
-         - all the text has changed in some way
-         - the drop shadow filter being used for titles, some 
-         subtitles, and emphasized words so that the user can 
-         read the pages better
-         - font sizes are bigger for easier reading
-         - padding or margins spaces have been added to certain elements
-         - some images and sections will move or expand depending 
+      - to generalize the changes to this website, you'll see:
+         - all the text has increased size, has a pleasing design, 
+         and/or has padding/margin spaces added
+         - some images and sections will also move or expand depending 
          on screen size
          - every page has a scroll to the top button that changes 
          color and moves so the user knows it's function 
       - we'll take a glance at these other pages to see the differences
-         - I've added subtitles
-         - again, images and sections are moving depending on screen
-         size
          - borders and margins have been added to separate the images
-          - links change color when hovered, and stay the same color
+         - links change color when hovered, and stay the same color
          of orange whether the user visited the site or not
          - last difference is that the images that act as links
          box shadow
          */
 
+         /* important things to note: 
+         - html background
+         - link colors
+         - back to top scrolling
+         - id selectors on home page
+         - recipe pic links
+         - html changes*/
+         
 /* SAME ON EVERY PAGE */
    /* BACKGROUND */
       /* every element of html has a gradient background black to orange;
